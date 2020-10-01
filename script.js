@@ -3,7 +3,7 @@ $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"))
 var hour = [9, 10, 11, 12, 13, 14, 15, 16, 17]
 var displayHour = ["9 AM","10 AM","11 AM","12 PM","1 PM","2 PM","3 PM","4 PM","5 PM"]
 
-//setting i to 0 and creating div with in a div to accsuss later.
+//setting i to 0 and creating div with in a div to accuses later.
 for (var i = 0; i<hour.length; i++){
     var createTextarea = $("<textarea>")
 
@@ -12,7 +12,7 @@ for (var i = 0; i<hour.length; i++){
     $(".container").append(creatediv)
     
     var currentTime = displayHour[i]
-    //creating colloms with in jquarry for 
+    //creating col with in jquery for 
     creatediv.append($("<div class = 'col-md-1 hour'>").text(currentTime))
     creatediv.append(createTextarea.attr("class", "col-md-10 description").attr("id", "memo-area"))
     creatediv.append($("<button class = 'button saveBtn col-md-1'>"))
